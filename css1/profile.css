@@ -1,0 +1,63 @@
+.page-profile {
+    /* these variables will be available ONLY INSIDE 
+    the profile container!!! */
+    --avatar-image-size:80vmin;
+    --screen-height:100vh;
+}
+.profile_basic-info {
+    text-align: center;
+}
+.profile_avatar {
+    /*img width: 80%; */
+    width:var(--avatar-image-size);
+    margin-top: calc(var(--screen-height)/3 - var(--avatar-image-size) /2);
+
+
+    /* top: 30%;--> center */
+    border-radius: 100%;
+}
+.profile_additional-info .profile-button {
+    /* border: 1px solid red; */
+    text-align: center;
+    margin-top: 10px;
+}
+.profile_additional-info .profile-button a {
+    /* border: 4px solid darkblue; */
+    font-size: 30px;
+}
+.profile_additional-info #button {
+    height:0;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.profile_additional-info #button:target {
+    height: 290px;
+}
+.profile_additional-info #portfolio,
+.profile_additional-info #contact {
+    padding-left: 22px;
+}
+#portfolio li>ul li {
+    color: white;
+}
+.profile_additional-info a{
+    text-decoration: none;
+    color: white;
+}
+.profile_additional-info form input{
+    height: 30px;      
+}
+.profile_additional-info form input:focus {
+    outline: none;
+    border: 3px solid yellow;   
+    }
+.profile_additional-info form button {
+    margin-left: 30px;
+    border: 1px solid yellow;
+    height: 50px;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 20px;
+    background-color: transparent;
+    color: white;
+    }
